@@ -1,9 +1,9 @@
-#App for linux that installs and is used as a hub for some KALI Linux tools
+# /menu.py
+# App for linux that installs and is used as a hub for some KALI Linux tools
 #
-#GUI Width 40??
 #
-#
-
+import os
+import single_download
 
 def gui_top():
 	hash_main = "||####################################||"
@@ -121,7 +121,7 @@ def menu_select():
 	console()
 	selection = int(input("  Enter Menu Number  :   "))
 	if selection == 1:
-		single_download()
+		single_download.main()
 	elif selection == 2:
 		search()
 	elif selection == 3:
@@ -139,45 +139,6 @@ def menu_select():
 		menu_select()
 	
 
-def single_download():
-	mid = "||####################################||"
-	blank = "||########                    ########||"
-	gui_top()
-	print("||#########    APPLICATION   #########||")
-	print("||########      DOWNLOAD      ########||")
-	print(blank)
-	print("||########  1  )  NMAP        ########||")
-	print(blank)
-	print("||########  2  )  WIRESHARK   ########||")
-	print(blank)
-	print("||########  3  )  HYDRA       ########||")
-	print(blank)
-	print("||########  4  )  TOR         ########||")
-	print(blank)
-	print("||########  5  )  PROXYS      ########||")
-	print(blank)
-	print("||########  6  )  DUCKDUCKGO  ########||")
-	print(blank)
-	print("||########  7  )  METASPLOIT  ########||")
-	print(blank)
-	print("||########  8  )  DROPBOX     ########||")
-	print(blank)
-	print("||########  9  )  VPN         ########||")
-	print(blank)
-	print("||########  10 )  DOWNLOAD    ########||")
-	print(blank)
-	print("||########  11 )  DOWNLOAD    ########||")
-	print(blank)
-	print("||########  12 )  DOWNLOAD    ########||")
-	print(blank)
-	print("||########  13 )  DOWNLOAD    ########||")
-	print(blank)
-	print("||########  14 )  DOWNLOAD    ########||")
-	gui_bot()
-	console()
-	app = input("  Enter Application Number  :  ")
-	if app == 'back':
-		start()
 	
 def search():
 	gui_top()
